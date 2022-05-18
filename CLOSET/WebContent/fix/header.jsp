@@ -3,14 +3,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-    <link rel="stylesheet" href="header.css">
-     <script
-    type="text/javascript"
-    src="http://code.jquery.com/jquery-1.11.0.js"></script>
-    <script src="../join/commission.js"></script>
-    <title>Document</title>
-    <script type="text/javascript">
+<link rel="stylesheet" href="header.css">
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.11.0.js"></script>
+<script src="../join/commission.js"></script>
+<script type="text/javascript">
    function changepage(value)
    {
       if(value=="0"){
@@ -23,7 +20,7 @@
          location.href="../join/signUp.jsp";
       }
       else if(value=="3"){//고객센터
-         /*location.href="signUp.jsp" */
+         location.href="../service/service_center_notice.jsp";
       }
       else if(value=="4"){//closet
          location.href="../main/closet.jsp"; 
@@ -96,7 +93,7 @@
     					<%
     					} 
     					%>
-                <li class="header__text"><a href="#">고객센터</a></li>
+                <li class="header__text"><a href="../service/service_center_notice.jsp">고객센터</a></li>
             </ul>
         </div>
         
