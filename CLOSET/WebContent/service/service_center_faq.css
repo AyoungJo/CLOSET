@@ -83,7 +83,7 @@ li {list-style: none;}
     color: #30cfc0;
 }
 .sub-menu__list{
-    display: none;  /* 평상시에는 서브메뉴가 안보이게 하기 */
+    display: none;  /* �룊�긽�떆�뿉�뒗 �꽌釉뚮찓�돱媛� �븞蹂댁씠寃� �븯湲� */
     height: auto;
     margin-top:40px;
     position: absolute;
@@ -310,7 +310,7 @@ li {list-style: none;}
     border: 1px solid #30cfc0;
     box-sizing: border-box;
 }
-/* 페이지번호 */
+/* �럹�씠吏�踰덊샇 */
 .bd-color-grey{
     margin: 0 auto;
     width: 313px;
