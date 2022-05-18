@@ -1,0 +1,70 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    font-family: 'Montserrat','NanumSquare', sans-serif;
+   
+}
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-top: 6px solid #30cfc0;
+}
+.logo__img{
+    text-align: center;
+    width: 600px;
+    padding-left:10px;
+}
+.title1 {
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.title2 {
+    margin-bottom: 20px;
+}
+.form1{
+    width:100%;
+    position: absolute;
+    top: 33%;  
+    margin-top: -100px;
+}
+.login{
+    text-align: center;
+    padding: 20px;
+    margin: 0px auto;
+}
+.input1 {
+    width: 800px;
+    height: 90px;
+    border: 1px solid #e0e0e0;
+    padding-left: 20px;
+    padding:2px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+.button1 {
+    background: #30cfc0;
+    border: 0;
+    color: #FFF;
+    width: 800px;
+    height: 90px;
+    padding: 4px;
+    font-size: 40px;
+    box-sizing: border-box;
+    -webkit-apperance:none;
+    appearance:none;
+}
+.agree {
+    width: 800px;
+    height: 90px;
+    margin: 10px auto;
+}

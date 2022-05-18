@@ -1,0 +1,358 @@
+/* CSS RESET */
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-family: 'Montserrat', 'NanumSquare', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+@import
+	url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css)
+	;
+
+@import
+	url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.header {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header::after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.header__nav {
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.header__text {
+	display: inline-block;
+	font-size: 14px;
+	color: #757575;
+	margin-left: 36px;
+	position: relative;
+}
+
+.header__text a:link {
+	color: #757575;
+}
+
+.header__text a:visited {
+	color: #757575;
+}
+
+.logo__area {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.bottom__menu {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.menu {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.menu__text {
+	display: inline-block;
+	font-size: 18px;
+	color: black;
+	padding: 24px 46px 20px 46px;
+}
+
+.menu__text:first-child {
+	padding-left: 0px;
+}
+
+.menu__text:last-child {
+	padding-right: 0px;
+}
+
+.menu__text a:visited {
+	color: black;
+}
+
+.menu__text a:link {
+	color: black;
+}
+
+.menu__text a:hover {
+	color: #30cfc0;
+}
+
+.jbfixed {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 9999;
+	background-color: #ffffff;
+} /* CSS RESET */
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-family: 'Montserrat', 'NanumSquare', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+@import
+	url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css)
+	;
+
+@import
+	url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.header {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header::after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.header__nav {
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.header__text {
+	display: inline-block;
+	font-size: 14px;
+	color: #757575;
+	margin-left: 36px;
+	position: relative;
+}
+
+.header__text a:link {
+	color: #757575;
+}
+
+.header__text a:visited {
+	color: #757575;
+}
+
+.logo__area {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.bottom__menu {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.menu {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.menu__text {
+	display: inline-block;
+	font-size: 18px;
+	color: black;
+	padding: 23px 59px 20px 60px;
+}
+
+.menu__text:first-child {
+	padding-left: 0px;
+}
+
+.menu__text:last-child {
+	padding-right: 0px;
+}
+
+.menu__text a:visited {
+	color: black;
+}
+
+.menu__text a:link {
+	color: black;
+}
+
+.menu__text a:hover {
+	color: #30cfc0;
+}
+
+.jbfixed {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 9999;
+	background-color: #ffffff;
+}
+
+.container {
+	width: 1200px;
+	margin: 40px auto;
+}
+
+.title1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.table1 {
+	text-align: center;
+	border: 1px solid #e0e0e0;
+	width: 1200px;
+	border-top: 3px solid #30cfc0;
+	border-bottom: 3px solid #30cfc0;
+	box-sizing: border-box;
+	background-color: white;
+	box-shadow: 0px 10px 10px -9px #b5b5b5;
+}
+
+.td1, .td2, .td3, .td4, .td5 {
+	padding: 10px 10px;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.table__content:first-child td {
+	border-top: 1px solid white;
+}
+
+.td1 {
+	width: 100px;
+}
+
+.td2 {
+	width: 400px;
+}
+
+.td3 {
+	width: 200px;
+}
+
+.td4 {
+	width: 300px;
+}
+
+.td5 {
+	width: 700px;
+}
+
+.content1, .content2, .content3, .content4 {
+	font-size: 16px;
+}
+
+.table__content td {
+	border-top: 1px solid #e0e0e0;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	height: 43px;
+}
+
+.user_info, .user_info:visited, .user_info:link {
+	color: black;
+}
+
+.user_info:hover {
+	color: #30cfc0;
+	border-bottom: 1px solid #30cfc0;
+}
+
+.table__button {
+	background-color: #30cfc0;
+	color: white;
+	width: 60px;
+	height: 30px;
+	vertical-align: middle;
+	font-size: 16px;
+}
+
+.table__link, .table__link:visited, .table__link:link {
+	color: black;
+}
+
+/* 풋터 영역 */
+.footer {
+	width: 100%;
+	background-color: #f5f5f5;
+	border-top: 1px solid #eaeaea;
+}
+
+.footer__align {
+	padding: 60px 0;
+	width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.footer__align::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.footer__content {
+	color: #424242;
+	padding-right: 193px;
+	float: left;
+	font-size: 16px;
+}
+
+.footer__content strong {
+	font-size: 18px;
+}
+
+.footer__content ul {
+	margin-top: 18px;
+	line-height: 2.4;
+}
+
+.footer__content ul a:link, .footer__content ul a:visited,
+	.footer__content ul a {
+	color: #424242;
+}
+
+.footer__icon {
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	padding-right: 10px;
+}
+
+.footer__content:last-child {
+	padding-right: 0px;
+}

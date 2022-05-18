@@ -1,0 +1,302 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Montserrat','NanumSquare', sans-serif;
+}
+a {text-decoration: none;}
+li {list-style: none;}
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.header{
+    width:1200px;
+    margin: 0 auto;
+}
+.header::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+.header__nav{
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header__text{
+    display: inline-block;
+    font-size: 14px;
+    color: #757575;
+    margin-left: 36px;
+    position: relative;
+}
+.header__text a:link{
+    color: #757575;
+}
+.header__text a:visited{
+    color: #757575;
+}
+.logo__area{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.logo{
+    display: inline-block;
+}
+
+.bottom__menu{
+    width: 1200px;
+    margin: 0 auto;
+}
+.menu{
+    width:1200px;
+    margin: 0 auto;
+}
+.menu::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.menu__list1{
+    float: left;
+}
+.menu__list2{
+    float: right;
+}
+.menu__text1{
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    padding: 20px 65px;
+    position:relative;
+}
+.menu__text2{
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    padding: 20px;
+    position:relative;
+}
+.menu__text1:first-child{
+    padding-left: 0px;
+}
+.menu__text2:last-child{
+    padding-right: 0px;
+}
+.menu__text1 a:visited{
+    color: black;
+}
+.menu__text1 a:link{
+    color: black;
+}
+.menu__text2 .s__link:visited{
+    color: #30cfc0;
+}
+.menu__text2 .s__link:link{
+    color: #30cfc0;
+}
+.menu__text1 a:hover{
+    color: #30cfc0;
+}
+.sub-menu__list{
+    display: none;  /* 평상시에는 서브메뉴가 안보이게 하기 */
+    height: auto;
+    margin-top:40px;
+    position: absolute;
+    top:20px;
+    left:5px;
+    z-index: 100;
+    font-size: 18px;
+    width:180px;
+}
+.menu__text1:hover .sub-menu__list{
+    display: block;
+    background-color:white;
+}
+.sub-menu__list__text{
+    padding: 10px;
+    box-sizing: border-box;
+    text-align:left;
+    padding-left: 23px;
+    color:black;
+}
+.sub-menu__list__text a:visited{
+    color:black;
+}
+.sub-menu__list__text a:link{
+    color:black;
+}
+.sub-menu__list__text:hover{
+    background-color: rgba(245,245,245,0.7);
+}
+.sub-menu__list__text:hover a{
+    color: #30cfc0;
+}
+.menu__list2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.s__link{
+	font-size:18px;
+	background-color:white;
+	color:#30cfc0;
+}
+.se__icon{
+    padding-right: 10px;
+    width: 18px;
+    display: inline;  
+    vertical-align: middle;
+}
+.ce__icon{
+    padding-right: 10px;
+    width: 22px;
+    display: inline;
+    vertical-align: middle;
+}
+.jbfixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    padding-left: 350px;
+    padding-right: 350px;
+    background-color: white;
+}
+
+.content{
+    width: 1200px;
+    margin: 40px auto;
+}
+.title1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.form1{
+    width: 1200px;
+    box-sizing: border-box;
+}
+.table1 {
+    text-align: center;
+    border-top: 3px solid #30cfc0;
+    border-bottom: 3px solid #30cfc0;
+    width: 1200px;
+    box-sizing: border-box;
+}
+.table__title1,.table__title2,.table__title3{
+    padding:10px 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 500;
+    width: 240px;
+    background-color:#f9f9f9; 
+    vertical-align: middle;
+}
+.table__title2{
+    height: 400px;
+}
+.table__title1, .table__title3{
+    height: 50px;
+}
+.table__content:first-child td{
+    border-top: 1px solid white;
+}
+.table__input{
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    width: 935px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 0px 5px;
+    font-size: 16px;
+}
+.table__input option{
+	font-size:16px;
+}
+.table__input2{
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    width: 935px;
+    height: 390px;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    font-size: 14px;
+}
+.table__input3{
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    width: 935px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    font-size: 14px;
+}
+.td__calendar{
+    width: 1200px;
+    height: 700px;
+}
+.btn_ok{
+    background-color: #30cfc0;
+    color: white;
+    width: 149px;
+    height: 43px;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 30px;
+    float: right;
+}
+.btn_part::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.btn_part{
+	margin-bottom:70px;
+}
+/* 풋터 영역 */
+.footer{
+    width: 100%;
+    background-color:#f5f5f5;
+    border-top: 1px solid #eaeaea;
+}
+.footer__align{
+    padding: 60px 0;
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.footer__align::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.footer__content{
+    color: #424242;
+    padding-right: 193px;
+    float: left;
+    font-size: 16px;
+}
+.footer__content strong{
+    font-size: 18px;
+}
+.footer__content ul{
+    margin-top: 18px;
+    line-height: 2.4;
+}
+.footer__content ul a:link, .footer__content ul a:visited, .footer__content ul a{
+    color: #424242;
+}
+.footer__icon{
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    padding-right: 10px;
+}
+
+.footer__content:last-child{
+    padding-right: 0px;
+}

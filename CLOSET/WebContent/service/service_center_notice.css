@@ -1,0 +1,457 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Montserrat','NanumSquare', sans-serif;
+}
+a {text-decoration: none;}
+li {list-style: none;}
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.header{
+    width:1200px;
+    margin: 0 auto;
+}
+.header::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+.header__nav{
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header__text{
+    display: inline-block;
+    font-size: 14px;
+    color: #757575;
+    margin-left: 36px;
+    position: relative;
+}
+.header__text a:link{
+    color: #757575;
+}
+.header__text a:visited{
+    color: #757575;
+}
+.logo__area{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.logo{
+    display: inline-block;
+}
+
+.bottom__menu{
+    width: 1200px;
+    margin: 0 auto;
+}
+.menu{
+    width:100%;
+    margin: 0 auto;
+}
+.menu::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.menu__list1{
+    float: left;
+}
+.menu__text{
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    padding: 20px 34px 20px 34px;
+    position:relative;
+}
+.menu__text:first-child{
+    padding-left: 0px;
+}
+.menu__text a:visited{
+    color: black;
+}
+.menu__text a:link{
+    color: black;
+}
+.menu__text a:hover{
+    color: #30cfc0;
+}
+.sub-menu__list{
+    display: none;  /* 평상시에는 서브메뉴가 안보이게 하기 */
+    height: auto;
+    margin-top:40px;
+    position: absolute;
+    top:22px;
+    left:10px;
+    z-index: 100;
+    font-size: 18px;
+    width:180px;
+}
+.menu__text:hover .sub-menu__list{
+    display: block;
+    background-color:rgba(245,245,245,0.9);
+}
+.sub-menu__list__text{
+    padding: 10px;
+    box-sizing: border-box;
+    text-align:left;
+    padding-left: 23px;
+}
+.sub-menu__list__text a:visited{
+    color:black;
+}
+.sub-menu__list__text a:link{
+    color:black;
+}
+.sub-menu__list__text:hover{
+    background-color: white;
+}
+.sub-menu__list__text:hover a{
+    color: #30cfc0;
+}
+.menu__list2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.menu__search{
+    width: 320px; 
+    height: 31px;
+    box-sizing: border-box;
+    margin:16px 10px 16px 160px;
+    float: left;
+    border: 1px solid #30cfc0;
+    border-radius: 20px;
+}
+.search__box{ 
+    border-radius: 20px;
+    margin-left: 10px;
+    width: 270px;
+    height: 29px;
+    padding: 5px 15px 5px 10px;
+    font-size: 16px;
+    color: #757575;
+    box-sizing: border-box;
+    outline: none;
+}
+.menu__search button{
+    border-radius: 20px;
+    float: right;
+    padding: 5px 15px 5px 0px;
+    height: 28px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.se__icon{
+   width: 18px;
+   display: inline;
+}
+.menu__cart button{
+    float: left;
+    padding: 5px;
+    margin:14px 2px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.ce__icon{
+   width: 22px;
+   display: inline;
+}
+.jbfixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    padding-left: 350px;
+    background-color: white;
+}
+
+
+.list-top {
+	width: 100%;
+	position: relative;
+}
+.list-top__img{
+    width: 100%;
+}
+.suit-share__title {
+	position: absolute;
+	top: 30%;
+	left: 25%;
+    font-size: 36px;
+    font-weight: 400;
+}
+.suit-share__title span{
+    font-weight: 600;
+}
+.suit-share__text {
+	text-align: left;
+	position: absolute;
+	top: 46%;
+	left: 25%;
+    font-size: 16px;
+    line-height: 2.0;
+    font-size: 16px;
+}
+.category a:link{
+    color:black;
+}
+.category a:visited{
+    color:black;
+}
+.category a{
+    color:black;
+}
+.category a:hover{
+    color:#30cfc0;
+    border-bottom: 1px solid #30cfc0;
+}
+.category{
+    line-height: 1.8;
+    width: 150px;
+    margin-top: 60px;
+    float:left;
+    position: static;
+}
+.category__title{
+    font-size: 21px;
+    width: 150px;
+    font-weight: 900;
+}
+.category__text{
+    padding: 10px 10px 10px 0px;
+    font-size: 18px;
+}
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+.content::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.product{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    float: right;
+}
+.product::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.product__table{
+    border-top: 3px solid #30cfc0;
+    border-bottom: 3px solid #30cfc0;
+    width: 1000px;
+    border-spacing:20px;
+}
+.product__title{
+    color: #30cfc0;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    float: left;
+    
+}
+.option{
+    font-size:16px;
+    float: right;
+    width: 200px;
+    border: 1px solid #e0e0e0;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 2px;
+    margin-top: 7px;
+}
+.product__title span{
+    font-weight: 600;
+}
+.product__content{
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    width: 280px;
+    height: 400px;
+    padding: 20px;
+    border-collapse: separate;
+}
+.product__content a:link, .product__content a:visited, .product__content a{
+    color: black;
+}
+.product__content__title{
+    font-size: 14px;
+    padding-top: 30px;
+    font-weight: 500;
+}
+.product__content__price{
+    font-size: 18px;
+    padding: 8px;
+}
+.product__content__button{
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+    width: 120px;
+    margin: 0 auto;
+    color: #9e9e9e;
+}
+.product__content:hover .product__content__button{
+    color:#30cfc0;
+}
+.product__content:hover{
+    border: 1px solid #30cfc0;
+    box-sizing: border-box;
+}
+/* 페이지번호 */
+.bd-color-grey{
+    margin: 0 auto;
+    width: 313px;
+    margin-top: 30px;
+}
+.item{
+    vertical-align: middle;
+    line-height: 1;
+    text-decoration: none;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    padding: 10px 15px;
+    text-transform: none;
+    color:black;
+}
+.item:focus{
+    font-weight: 500;
+    color: #30cfc0;
+}
+.item:first-child:focus{
+    color: black;
+}
+.item:last-child:focus{
+    color: black;
+}
+.container {
+    width:1000px;
+    margin: 40px auto;
+    margin-right: 0px;
+}
+.title1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.title2 {
+    margin-bottom: 10px;
+}
+.form1{
+    width: 1000px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-top: 3px solid #30cfc0;
+    border-bottom: 3px solid #30cfc0;
+}
+.table1 {
+    text-align: center;
+}
+.td1, .td2, .td3, .td4, .td5{
+    padding:10px 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.table__content:first-child td{
+    border-top: 1px solid white;
+}
+.td1{
+    width: 70px;
+}
+.td2{
+    width: 480px;
+}
+.td3{
+    width: 150px;
+}
+.content1, .content2, .content3, .content4, .content5{
+    font-size: 16px;
+}
+.content2{
+    text-align: left;
+}
+.table__content td{
+    border-top: 1px solid #e0e0e0;
+    padding:10px 10px;
+    box-sizing: border-box;
+}
+.table__button{
+    background-color: #30cfc0;
+    color: white;
+    width: 60px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.table__link, .table__link:visited, .table__link:link{
+    color: black;
+}
+
+.footer{
+    width: 100%;
+    height: 230px;
+    background-color:#f7f7f7;
+}
+.footer__content{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: left;
+}
+.footer_icon{
+    width: 40px;
+    padding: 20px;
+}
+.footer_icon:last-child{
+    width: 40px;
+    padding-right: 0px;
+}
+.footer2{
+    width: 100%;
+    height: 50px;
+    background-color:#ebebeb;
+}
+.footer__content p{
+    line-height: 1.8;
+    color: #9e9e9e;
+    font-size: 16px;
+}
+.footer__content2{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    color: #757575;
+    font-size: 16px;
+}
+.footer__content2 p{
+    padding-top: 17px;
+}
+.footer__text{
+    float: left;
+    margin-left: 10px;
+}
+.footer__icon__content{
+    float: left;
+    margin-top: 74px;
+    margin-left: 420px;
+}
+.footer__content::after{
+    display: block;
+    content: "";
+    clear: both;
+}

@@ -1,0 +1,373 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Montserrat','NanumSquare', sans-serif;
+}
+a {text-decoration: none;}
+li {list-style: none;}
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.header{
+    width:1200px;
+    margin: 0 auto;
+}
+.header::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+.header__nav{
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header__text{
+    display: inline-block;
+    font-size: 14px;
+    color: #757575;
+    margin-left: 36px;
+    position: relative;
+}
+.header__text a:link{
+    color: #757575;
+}
+.header__text a:visited{
+    color: #757575;
+}
+.logo__area{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.logo{
+    display: inline-block;
+}
+
+.bottom__menu{
+    width: 1200px;
+    margin: 0 auto;
+}
+.menu{
+    width:1200px;
+    margin: 0 auto;
+}
+.menu::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.menu__list1{
+    float: left;
+}
+.menu__list2{
+    float: right;
+}
+.menu__text1{
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    padding: 20px 65px;
+    position:relative;
+}
+.menu__text2{
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    padding: 20px;
+    position:relative;
+}
+.menu__text1:first-child{
+    padding-left: 0px;
+}
+.menu__text2:last-child{
+    padding-right: 0px;
+}
+.menu__text1 a:visited{
+    color: black;
+}
+.menu__text1 a:link{
+    color: black;
+}
+.menu__text2 .s__link:visited{
+    color: #30cfc0;
+}
+.menu__text2 .s__link:link{
+    color: #30cfc0;
+}
+.menu__text1 a:hover{
+    color: #30cfc0;
+}
+.sub-menu__list{
+    display: none;  /* 평상시에는 서브메뉴가 안보이게 하기 */
+    height: auto;
+    margin-top:40px;
+    position: absolute;
+    top:20px;
+    left:5px;
+    z-index: 100;
+    font-size: 18px;
+    width:180px;
+}
+.menu__text1:hover .sub-menu__list{
+    display: block;
+    background-color:white;
+}
+.sub-menu__list__text{
+    padding: 10px;
+    box-sizing: border-box;
+    text-align:left;
+    padding-left: 23px;
+    color:black;
+}
+.sub-menu__list__text a:visited{
+    color:black;
+}
+.sub-menu__list__text a:link{
+    color:black;
+}
+.sub-menu__list__text:hover{
+    background-color: rgba(245,245,245,0.7);
+}
+.sub-menu__list__text:hover a{
+    color: #30cfc0;
+}
+.menu__list2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.s__link{
+	font-size:18px;
+	background-color:white;
+	color:#30cfc0;
+}
+.se__icon{
+    padding-right: 10px;
+    width: 18px;
+    display: inline;  
+    vertical-align: middle;
+}
+.ce__icon{
+    padding-right: 10px;
+    width: 22px;
+    display: inline;
+    vertical-align: middle;
+}
+.jbfixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    background-color: white;
+}
+.container {
+    width: 640px;
+    margin: 40px auto;
+}
+
+.title1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.title2 {
+    margin-bottom: 10px;
+}
+
+.title3 {
+    text-align: right;
+    margin-bottom: 10px;
+    color: #30cfc0;
+}
+
+.title4 {
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.title5 {
+    margin-bottom: 10px;
+}
+
+.table1 {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 640px;
+    margin: 0 auto;
+    height: 450px;
+    border: 1px solid #e0e0e0;
+    border-top: 3px solid #30cfc0;
+    padding-right: 40px;
+}
+
+.td1{
+    width: 180px;
+    padding-left: 23px;
+    font-size: 18px;
+}
+
+.radio1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+input[type='radio'] {
+  -webkit-appearance:none;
+  width:16px;
+  height:16px;
+  border:1px solid #e0e0e0;
+  border-radius:50%;
+  outline:none;
+  background:white;
+  vertical-align: middle;
+}
+input[type='radio']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  margin: 20% auto;   
+  border-radius:50%;  
+  vertical-align: middle;
+}
+input[type='radio']:checked:before {
+  background:#30cfc0;
+  vertical-align: middle;
+}
+
+.choice__sex__content{
+    display: inline;
+}
+.choice__sex span{
+    margin-left: 12px;
+    font-size: 16px;
+    height: 35px;
+}
+
+.choice__cate{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+.choice__cate__content{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.choice__cate span{
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+
+input[type='number'] {
+  width:150px;
+  height:35px;
+  border:1px solid #e0e0e0;
+  outline:none;
+  background:white;
+  vertical-align: middle;
+  display: inline;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.input_date{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+    font-size: 16px;
+}
+input[type='date'] {
+  width:316px;
+  height:35px;
+  border:1px solid #e0e0e0;
+  outline:none;
+  background:white;
+  vertical-align: middle;
+  padding-left: 10px;
+  box-sizing: border-box;
+  display: inline;
+}
+
+.input1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 316px;
+    height: 35px;
+    border: 1px solid #e0e0e0;
+    margin-left: 45px;
+    font-size: 16px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.button1{
+    background: #30cfc0;
+    border: 0;
+    color: #FFF;
+    width: 140px;
+    height: 35px;
+    padding: 4px;
+    margin-top: 40px;
+    font-size: 18px;
+    margin-left: 112px;
+}
+.button2 {
+    background: #30cfc0;
+    border: 0;
+    color: #FFF;
+    width: 148px;
+    height: 35px;
+    padding: 4px;
+    margin-top: 40px;
+    margin-left: 112px;
+    font-size: 18px;
+}
+/* 풋터 영역 */
+.footer{
+    width: 100%;
+    background-color:#f5f5f5;
+    border-top: 1px solid #eaeaea;
+}
+.footer__align{
+    padding: 60px 0;
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.footer__align::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.footer__content{
+    color: #424242;
+    padding-right: 193px;
+    float: left;
+    font-size: 16px;
+}
+.footer__content strong{
+    font-size: 18px;
+}
+.footer__content ul{
+    margin-top: 18px;
+    line-height: 2.4;
+}
+.footer__content ul a:link, .footer__content ul a:visited, .footer__content ul a{
+    color: #424242;
+}
+.footer__icon{
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    padding-right: 10px;
+}
+
+.footer__content:last-child{
+    padding-right: 0px;
+}
