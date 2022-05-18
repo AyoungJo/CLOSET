@@ -27,7 +27,7 @@
     <!--product-->
         <div class="product">
         <%
-        String member_email = (String)session.getAttribute("sessionID");
+        	String member_email = (String)session.getAttribute("sessionID");
         %>
            <form name="volunteerForm" action="volunteer_applyProc.jsp" method="post"
            	onsubmit="return voluncheck();" >

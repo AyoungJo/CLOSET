@@ -6,7 +6,9 @@
 <link rel="stylesheet" href="footer.css">
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-1.11.0.js"></script>
+
 <script src="../join/commission.js"></script>
+
 <body>
 <!--footer-->
 <div class="footer">

@@ -1,6 +1,11 @@
 /* CSS RESET */
-@import	url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
-@import	url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import
+	url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css)
+	;
+
+@import
+	url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 * {
 	padding: 0;
 	border: 0;

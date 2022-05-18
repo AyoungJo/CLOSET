@@ -26,7 +26,7 @@
 		session.setAttribute("username", member_email);
 		String username = (String)session.getAttribute("username");
 	%>
-
+	
     <!--category&product-->
     <div class="content">  
         <!--main content-->

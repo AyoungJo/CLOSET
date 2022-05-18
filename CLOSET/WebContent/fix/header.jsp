@@ -8,6 +8,7 @@
 	src="http://code.jquery.com/jquery-1.11.0.js"></script>
 <script src="../join/commission.js"></script>
 <script type="text/javascript">
+
    function changepage(value)
    {
       if(value=="0"){
@@ -45,6 +46,7 @@
        }
    }
 </script>
+
 <script>
        $(document).ready(function sex(){
            //최상단 체크박스 클릭
@@ -64,9 +66,11 @@
 </script>  
 </head>
 <body>
+
 <%
 	request.setCharacterEncoding("utf-8");
 %>
+
 <!--header-->
     <div class="header__fixed">
         <div class="header">

@@ -37,7 +37,6 @@ request.setCharacterEncoding("UTF-8");
 
 		<div class="container">
 			<div class="container-wrap">
-
 				<h1 class="title1">공지사항</h1>
 				<p class="title2">CLOSET의 새로운 소식들과 유용한 정보들은 한 곳에서 확인하세요.</p>
 				<form class="form1">

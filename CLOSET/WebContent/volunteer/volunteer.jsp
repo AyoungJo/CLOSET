@@ -23,8 +23,7 @@
 	<jsp:useBean id="cdao" class="closet.closetDAO"/>
    
 	<script>   
-		function volunapply(){
-			
+		function volunapply(){			
 			location.href = "../volunteer/volunteer_apply.jsp";	
 		}
 	</script>
