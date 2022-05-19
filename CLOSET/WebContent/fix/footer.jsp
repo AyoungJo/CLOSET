@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-<link rel="stylesheet" href="footer.css">
+<!-- <link rel="stylesheet" href="footer.css"> -->
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-1.11.0.js"></script>
 
@@ -111,9 +111,9 @@
         <div class="footer__content">
             <strong>Service Center</strong>
             <ul>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">1:1문의</a></li>
+                <li><a href="../service/service_center_notice.jsp">공지사항</a></li>
+                <li><a href="../service/service_center_faq.jsp">FAQ</a></li>
+                <li><a href="../service/service_center_qna.jsp">1:1문의</a></li>
                 
             </ul>
         </div>

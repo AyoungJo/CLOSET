@@ -5,11 +5,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type">
 <script type="text/javascript"
  	src="http://code.jquery.com/jquery-1.11.0.js"></script>
 <script src="../join/commission.js"></script>
-    
+<style type="text/css">
+	@import url("../fix/header.css");
+	@import url("../fix/footer.css");	
+</style>
 <link rel="stylesheet" href="volunteer.css">
 </head>
 <body>
@@ -18,9 +21,12 @@
 %> 
 
 	<!--header-->
-	<%@ include file="../fix/header.jsp" %>
+	<jsp:include page="../fix/header.jsp" />	
 
 	<jsp:useBean id="cdao" class="closet.closetDAO"/>
+
+	<!--footer-->    
+    <jsp:include page="../fix/footer.jsp" />
    
 	<script>   
 		function volunapply(){			
@@ -95,7 +101,7 @@
     </div>
     
 	<!--footer-->    
-    <%@ include file="../fix/footer.jsp" %>
+    <jsp:include page="../fix/footer.jsp" />
 
 </body>
 </html>

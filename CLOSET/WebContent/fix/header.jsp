@@ -7,7 +7,7 @@
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-1.11.0.js"></script>
 <script src="../join/commission.js"></script>
-<script type="text/javascript">
+<script >
 
    function changepage(value)
    {
@@ -171,5 +171,7 @@
             </div>
         </div>
     </div>
+    
+    
 </body>
 </html>

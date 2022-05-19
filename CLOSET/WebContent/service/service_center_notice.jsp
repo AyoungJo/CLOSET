@@ -2,22 +2,27 @@
 <%@page import="closet.closetBean"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript"
  	src="http://code.jquery.com/jquery-1.11.0.js"></script>
 <script src="../join/commission.js"></script>
-    
+<style type="text/css">
+	@import url("../fix/header.css");
+	@import url("../fix/footer.css");	
+</style>
 <link rel="stylesheet" href="service_center_notice.css">
 </head>
 <body>
 <%
-request.setCharacterEncoding("UTF-8");   
+	request.setCharacterEncoding("UTF-8");   
 %> 
 	<!--header-->
-	<%@ include file="../fix/header.jsp"%>
+	<jsp:include page="../fix/header.jsp" />
 
 	<jsp:useBean id="cdao" class="closet.closetDAO" />
 
@@ -43,7 +48,7 @@ request.setCharacterEncoding("UTF-8");
 					<table class="table1">
 						<tr class="table__title">
 							<td class="td1">
-								<h4>번호</h4>
+								<h4>분류</h4>
 							</td>
 							<td class="td2">
 								<h4>제목</h4>
@@ -92,13 +97,12 @@ request.setCharacterEncoding("UTF-8");
 						</tr>
 					</table>
 				</form>
-
 			</div>
 		</div>
 	</div>
 
-	<!--footer-->
-	<%@ include file="../fix/footer.jsp"%>
-
+	<!--footer-->    
+    <jsp:include page="../fix/footer.jsp" />
+    
 </body>
 </html>

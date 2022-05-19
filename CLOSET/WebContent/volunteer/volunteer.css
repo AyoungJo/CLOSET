@@ -216,15 +216,6 @@ li {list-style: none;}
     border-bottom: 3px solid #30cfc0;
     width: 1200px;
 }
-.product__content__title{
-    border: 1px solid #e0e0e0;
-    text-align: center;
-    width: 311px;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    box-sizing: border-box;
-}
 .product__content{
     border: 1px solid #e0e0e0;
     text-align: left;
@@ -235,6 +226,16 @@ li {list-style: none;}
     font-size: 16px;
     box-sizing: border-box;
 }
+.product__content__title{
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    width: 311px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
 .btn_ok{
     background-color: #30cfc0;
     color: white;
@@ -253,3 +254,5 @@ li {list-style: none;}
 .btn_part{
 	margin-bottom:50px;
 }
+
+
