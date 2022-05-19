@@ -40,7 +40,7 @@
 피팅 옷장 (장바구니 역할), 피팅 예약 부분은 완벽하게 구현하지 못해 리팩토링 완료 후 구현 예정 중에 있습니다.
 
 ## 대표 페이지 및 기능 설명
-* 메인 페이지
+* 메인 페이지<br>
 CLOSET 의 소개, 가치, 프로세스를 간단하게 확인할 수 있습니다.
 <img src="https://user-images.githubusercontent.com/102283529/169048226-5605b1f6-d167-4c30-8356-8cee18416ed8.png" width="600px">
 <img src="https://user-images.githubusercontent.com/102283529/169048279-b124246e-3396-4dd6-bec4-4aef217dcdc4.png" width="600px">
