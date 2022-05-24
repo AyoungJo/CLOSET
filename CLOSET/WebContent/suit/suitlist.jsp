@@ -8,20 +8,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript"
- 	src="http://code.jquery.com/jquery-1.11.0.js"></script>
+	src="http://code.jquery.com/jquery-1.11.0.js"></script>
 <script src="../join/commission.js"></script>
-    
+
 <link rel="stylesheet" href="suitlist.css">
 
 </head>
 <body>
-<%
-request.setCharacterEncoding("UTF-8");   
-%> 
-<!--header-->
-<%@ include file="../fix/header.jsp" %>
+	<%
+		request.setCharacterEncoding("UTF-8");
+	%>
+	<!--header-->
+	<%@ include file="../fix/header.jsp"%>
 
-<jsp:useBean id="cdao" class="closet.closetDAO"/>
+	<jsp:useBean id="cdao" class="closet.closetDAO" />
 
 	<!--main content-->
 	<!--list-top-->
@@ -92,85 +92,82 @@ request.setCharacterEncoding("UTF-8");
 			</div>
 
 			<form>
-				<table class="product__table">
+			<table class="product__table">
 			<%
-                int totalCount = 0;
-           		totalCount = cdao.getCount();
-                int pageSize=12; //페이지당 12개씩 보이게 함
-                String strPageNum = request.getParameter("pageNum");
-                if(strPageNum == null){
-                   strPageNum = "1";
-                }
-                int pageNum=Integer.parseInt(strPageNum);
-                int startRow = (pageNum-1)*pageSize +1;
-                int endRow = pageNum*pageSize;
-            %>
-					<%
-             ArrayList<closetBean> c = cdao.getLists(startRow, endRow);
-                
-                int j=0;
-               for(int i=0; i<c.size(); i++){
-                  //ArrayList로부터 빈즈클래스를 하나씩 꺼내서 출력함.
-                     closetBean cbean = c.get(i);
-                   
-                  if(j%3==0){//한 행에 데이터 3개를 놓기위해서
-            %>
-					<tr>
-			<%   
-                  }
-            %>
-					<td class="product__content"><a
-						href="suitdetail.jsp?register_num=<%=cbean.getRegister_num()%>">
-							<img class="product__img"
-							src="../upload/<%=cbean.getRegister_mainimg() %>">
-							<h4 class="product__content__title"><%=cbean.getRegister_name()%></h4>
-							<p class="product__content__price"><%=cbean.getRegister_office() %></p>
-							<p class="product__content__button">VIEW DETAIL</p>
-					</a></td>
-			<%      
-                  j++;
-                  }               
-            %>
-					</tr>
-				</table>
+				int totalCount = 0;
+				totalCount = cdao.getCount();
+				int pageSize = 12; //페이지당 12개씩 보이게 함
+				String strPageNum = request.getParameter("pageNum");
+				if (strPageNum == null) {
+					strPageNum = "1";
+				}
+				int pageNum = Integer.parseInt(strPageNum);
+				int startRow = (pageNum - 1) * pageSize + 1;
+				int endRow = pageNum * pageSize;
 
-				<!--페이지 넘버링  -->
-				<div class="bd-color-grey">
-					<div class="page_number">
+				ArrayList<closetBean> c = cdao.getLists(startRow, endRow);
+
+				int j = 0;
+				for (int i = 0; i < c.size(); i++) {
+					closetBean cbean = c.get(i);
+
+					if (j % 3 == 0) {
+			%>
+				<tr>
+					<%
+						}
+					%>
+					<td class="product__content">
+						<a href="suitdetail.jsp?register_num=<%=cbean.getRegister_num()%>">
+						<img class="product__img" src="../upload/<%=cbean.getRegister_mainimg()%>">
+						<h4 class="product__content__title"><%=cbean.getRegister_name()%></h4>
+						<p class="product__content__price"><%=cbean.getRegister_office()%></p>
+						<p class="product__content__button">VIEW DETAIL</p>
+						</a>
+					</td>
+					<%
+						j++;
+					}
+					%>
+				</tr>
+			</table>
+
+			<!--페이지 넘버링  -->
+			<div class="bd-color-grey">
+				<div class="page_number">
 				<%
-                 if(totalCount>0){
-                    int pageCount = totalCount/pageSize +(totalCount%pageSize == 0? 0:1);
-                    
-                    int pageBlock = 5;
-                    
-                    int startPage = ((pageNum/pageBlock)-(pageNum%pageBlock==0 ? 1:0))*pageBlock + 1;
-                    int endPage = startPage + pageBlock -1 ;
-                    if(endPage > pageCount){
-                       endPage = pageCount;
-                 }
-                 //이전
-                 if(startPage > pageBlock){
-                    out.println("<a href=\"?pageNum=" + (endPage-pageBlock) + "\" class=\"item\">이전</a>");
-                 } 
-                 
-                 //페이지 넘버 부여
-                 for(int s=startPage; s<=endPage; s++){
-                    if(s == pageNum){
-                       out.println("<a href=\"?pageNum=" + s + "\" class=\"item\"><b>" + s + "</b></a>");
-                    }
-                    else{
-                       out.println("<a href=\"?pageNum=" + s + "\" class=\"item\">" + s + "</a>");
-                    }
-                 }
-                 
-                 //다음
-                 if(endPage<pageCount){
-                     out.print("<a href=\"?pageNum=" + (startPage+pageBlock) + "\" class=\"item\">다음</a>");
-                  }
-              }                
+					if (totalCount > 0) {
+					int pageCount = totalCount / pageSize + (totalCount % pageSize == 0 ? 0 : 1);
+
+					int pageBlock = 5;
+
+					int startPage = ((pageNum / pageBlock) - (pageNum % pageBlock == 0 ? 1 : 0)) * pageBlock + 1;
+					int endPage = startPage + pageBlock - 1;
+					if (endPage > pageCount) {
+						endPage = pageCount;
+					}
+					//이전
+					if (startPage > pageBlock) {
+						out.println("<a href=\"?pageNum=" + (endPage - pageBlock) + "\" class=\"item\">이전</a>");
+					}
+
+					//페이지 넘버 부여
+					for (int s = startPage; s <= endPage; s++) {
+						if (s == pageNum) {
+					out.println("<a href=\"?pageNum=" + s + "\" class=\"item\"><b>" + s + "</b></a>");
+						} else {
+					out.println("<a href=\"?pageNum=" + s + "\" class=\"item\">" + s + "</a>");
+						}
+					}
+
+					//다음
+					if (endPage < pageCount) {
+						out.print("<a href=\"?pageNum=" + (startPage + pageBlock) + "\" class=\"item\">다음</a>");
+					}
+				}
 				%>
-					</div>
 				</div>
+			</div>
 			</form>
 		</div>
 	</div>
