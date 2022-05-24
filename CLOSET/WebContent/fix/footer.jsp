@@ -1,17 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE>
 <html lang="en">
 <head>
-<!-- <link rel="stylesheet" href="footer.css"> -->
+<meta http-equiv="Content-Type" charset="UTF-8">
 <script type="text/javascript"
-	src="http://code.jquery.com/jquery-1.11.0.js"></script>
-
+ 	src="http://code.jquery.com/jquery-1.11.0.js"></script>
 <script src="../join/commission.js"></script>
-
+<style type="text/css">
+	@import url("../fix/header.css");
+	@import url("../fix/footer.css");	
+</style>
+<script src="../join/commission.js"></script>
 <body>
 <!--footer-->
-<div class="footer">
+<!-- <div class="footer"> -->
+<footer class="footer">
     <div class="footer__align">               
         <div class="footer__content">
             <strong>Menu</strong>
@@ -127,6 +131,6 @@
         </div>
                  
     </div>
-</div>
+</footer>
 </body>
 </html>

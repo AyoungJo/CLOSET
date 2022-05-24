@@ -46,7 +46,6 @@
        }
    }
 </script>
-
 <script>
        $(document).ready(function sex(){
            //최상단 체크박스 클릭
