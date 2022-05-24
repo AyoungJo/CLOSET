@@ -1,258 +1,124 @@
 /* CSS RESET */
+@import
+	url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css)
+	;
+
+@import
+	url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 * {
-    padding: 0;
-    border: 0;
-    margin: 0;
-    font-family: 'Montserrat','NanumSquare', sans-serif;
-}
-a {text-decoration: none;}
-li {list-style: none;}
-
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
-.header{
-    width:1200px;
-    margin: 0 auto;
-}
-.header::after{
-    clear: both;
-    display: block;
-    content: "";
-}
-.header__nav{
-    float: right;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.header__text{
-    display: inline-block;
-    font-size: 14px;
-    color: #757575;
-    margin-left: 36px;
-    position: relative;
-}
-.header__text a:link{
-    color: #757575;
-}
-.header__text a:visited{
-    color: #757575;
-}
-.logo__area{
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-.logo{
-    display: inline-block;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-family: 'Montserrat', 'NanumSquare', sans-serif;
 }
 
-.bottom__menu{
-    width: 1200px;
-    margin: 0 auto;
-}
-.menu{
-    width:1200px;
-    margin: 0 auto;
-}
-.menu::after{
-    display: block;
-    clear: both;
-    content: "";
-}
-.menu__list1{
-    float: left;
-}
-.menu__list2{
-    float: right;
-}
-.menu__text1{
-    display: inline-block;
-    font-size: 18px;
-    color: black;
-    padding: 20px 65px;
-    position:relative;
-}
-.menu__text2{
-    display: inline-block;
-    font-size: 18px;
-    color: black;
-    padding: 20px;
-    position:relative;
-}
-.menu__text1:first-child{
-    padding-left: 0px;
-}
-.menu__text2:last-child{
-    padding-right: 0px;
-}
-.menu__text1 a:visited{
-    color: black;
-}
-.menu__text1 a:link{
-    color: black;
-}
-.menu__text2 .s__link:visited{
-    color: #30cfc0;
-}
-.menu__text2 .s__link:link{
-    color: #30cfc0;
-}
-.menu__text1 a:hover{
-    color: #30cfc0;
-}
-.sub-menu__list{
-    display: none;  /* 평상시에는 서브메뉴가 안보이게 하기 */
-    height: auto;
-    margin-top:40px;
-    position: absolute;
-    top:20px;
-    left:5px;
-    z-index: 100;
-    font-size: 18px;
-    width:180px;
-}
-.menu__text1:hover .sub-menu__list{
-    display: block;
-    background-color:white;
-}
-.sub-menu__list__text{
-    padding: 10px;
-    box-sizing: border-box;
-    text-align:left;
-    padding-left: 23px;
-    color:black;
-}
-.sub-menu__list__text a:visited{
-    color:black;
-}
-.sub-menu__list__text a:link{
-    color:black;
-}
-.sub-menu__list__text:hover{
-    background-color: rgba(245,245,245,0.7);
-}
-.sub-menu__list__text:hover a{
-    color: #30cfc0;
-}
-.menu__list2::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-.s__link{
-	font-size:18px;
-	background-color:white;
-	color:#30cfc0;
-}
-.se__icon{
-    padding-right: 10px;
-    width: 18px;
-    display: inline;  
-    vertical-align: middle;
-}
-.ce__icon{
-    padding-right: 10px;
-    width: 22px;
-    display: inline;
-    vertical-align: middle;
-}
-.jbfixed {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 9999;
-    padding-left: 350px;
-    padding-right: 350px;
-    background-color: white;
+a {
+	text-decoration: none;
 }
 
+li {
+	list-style: none;
+}
+.container {
+	height: auto;
+	min-height: 100%;	
+}
 
 .list-top {
 	width: 100%;
 	position: relative;
 }
-.list-top__img{
-    width: 100%;
-    opacity: 0.2;
-    height: 400px;
+
+.list-top__img {
+	width: 100%;
+	opacity: 0.2;
+	height: 400px;
 }
+
 .suit-share__title {
 	position: absolute;
 	top: 38%;
 	left: 50%;
-    transform:translate(-50%, -50%); 
-    font-size: 36px;
-    font-weight: 400;
+	transform: translate(-50%, -50%);
+	font-size: 36px;
+	font-weight: 400;
 }
-.suit-share__title span{
-    font-weight: 600;
+
+.suit-share__title span {
+	font-weight: 600;
 }
+
 .suit-share__text {
 	text-align: center;
 	position: absolute;
 	top: 55%;
 	left: 50%;
-    transform:translate(-50%, -50%); 
-    font-size: 16px;
-    line-height: 2.0;
-}
-.content{
-    width: 1200px;
-    margin: 40px auto;
-}
-.product__title{
-    color: #30cfc0;
-    font-size: 28px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-.product__title span{
-    font-weight: 600;
-}
-.product__table{
-    border-top: 3px solid #30cfc0;
-    border-bottom: 3px solid #30cfc0;
-    width: 1200px;
-}
-.product__content{
-    border: 1px solid #e0e0e0;
-    text-align: left;
-    width: 883px;
-    padding: 20px;
-    padding-left: 40px;
-    line-height: 1.8;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-.product__content__title{
-    border: 1px solid #e0e0e0;
-    text-align: center;
-    width: 311px;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    box-sizing: border-box;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	line-height: 2.0;
 }
 
-.btn_ok{
-    background-color: #30cfc0;
-    color: white;
-    width: 149px;
-    height: 43px;
-    padding: 10px;
-    font-size: 18px;
-    margin-top: 30px;
-    float: right;
-}
-.btn_part::after{
-    clear: both;
-    content: "";
-    display: block;
-}
-.btn_part{
-	margin-bottom:50px;
+.content {
+	width: 1200px;
+	margin: 40px auto;
 }
 
+.product__title {
+	color: #30cfc0;
+	font-size: 28px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
 
+.product__title span {
+	font-weight: 600;
+}
+
+.product__table {
+	border-top: 3px solid #30cfc0;
+	border-bottom: 3px solid #30cfc0;
+	width: 1200px;
+}
+
+.product__content {
+	border: 1px solid #e0e0e0;
+	text-align: left;
+	width: 883px;
+	padding: 20px;
+	padding-left: 40px;
+	line-height: 1.8;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+.product__content__title {
+	border: 1px solid #e0e0e0;
+	text-align: center;
+	width: 311px;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 600;
+	box-sizing: border-box;
+}
+
+.btn_ok {
+	background-color: #30cfc0;
+	color: white;
+	width: 149px;
+	height: 43px;
+	padding: 10px;
+	font-size: 18px;
+	margin-top: 30px;
+	float: right;
+}
+
+.btn_part::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.btn_part {
+	margin-bottom: 50px;
+}
